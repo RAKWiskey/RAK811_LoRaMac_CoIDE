@@ -1063,7 +1063,7 @@ static void OnRadioTxDone( void )
     // Setup timers
     if( IsRxWindowsEnabled == true )
     {
-        TimerSetValue( &RxWindowTimer1, RxWindow1Delay);
+        TimerSetValue( &RxWindowTimer1, RxWindow1Delay-30);
         TimerStart( &RxWindowTimer1 );
         if( LoRaMacDeviceClass != CLASS_C )
         {
